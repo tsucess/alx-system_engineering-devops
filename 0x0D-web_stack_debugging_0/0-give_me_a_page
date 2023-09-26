@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#script was use to fix a not function of a web server
+sudo service apache2 restart
