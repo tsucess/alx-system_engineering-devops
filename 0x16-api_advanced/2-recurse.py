@@ -22,33 +22,6 @@ def recurse(subreddit, hot_list=[], after=None):
     headers = {
         'User-Agent': u_agent
     }
-<<<<<<< HEAD
-    sort = 'hot'
-    limit = 30
-    res = requests.get(
-        '{}/r/{}/.json?sort={}&limit={}&count={}&after={}'.format(
-            BASE_URL,
-            subreddit,
-            sort,
-            limit,
-            n,
-            after if after else ''
-        ),
-        headers=api_headers,
-        allow_redirects=False
-    )
-    if res.status_code == 200:
-        data = res.json()['data']
-        posts = data['children']
-        count = len(posts)
-        hot_list.extend(list(map(lambda x: x['data']['title'], posts)))
-        if count >= limit and data['after']:
-            return recurse(subreddit, hot_list, n + count, data['after'])
-        else:
-            return hot_list if hot_list else None
-    else:
-        return hot_list if hot_list else None
-=======
 
     params = {
         'after': after
@@ -70,4 +43,3 @@ def recurse(subreddit, hot_list=[], after=None):
     if not after:
         return hot_list
     return recurse(subreddit, hot_list=hot_list, after=after)
->>>>>>> 5bf448c9e57adadaa90e161d44069198c4b06b89
