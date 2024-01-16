@@ -19,11 +19,11 @@ On 8-11-2023, our web application experienced a critical incident that resulted 
 + 8-11-2023 10:20 AM GMT+1 - The incident was escalated to the front end team.
 + 8-11-2023 10:55 AM GMT+1 - The incident was resolved by rerouting the index page of the web application (Homepage).
  
- ## Root Cause And Resolution
+ ### Root Cause And Resolution
 
  The index file was renamed as homepage, It was raising an error 404 Page not found, because it couldn't find the root file which is by default name as "index" and also the home page of the website. One of our frontend developer fixed the issue by dupicating and renaming the home page into index.html page and the site came up immediately.
 
-## Corrective And Preventative Measures
+### Corrective And Preventative Measures
 
 + Communication
 Clear communication channels during incidents are crucial.
