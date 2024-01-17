@@ -4,4 +4,4 @@
 # ssh ubuntu@35.153.18.80 -i ~/.ssh/school
 
 # new server
-ssh ubuntu@3.86.7.109 -i ~/.ssh/school
+ssh ubuntu@54.174.252.137 -i ~/.ssh/school
