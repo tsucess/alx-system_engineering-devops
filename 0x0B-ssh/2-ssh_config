@@ -2,6 +2,6 @@
 # Client configuration file
 # file with user config
 
-Host 54.224.46.152
+Host 3.86.7.109
 IdentityFile ~/.ssh/school
 PasswordAuthentication no
